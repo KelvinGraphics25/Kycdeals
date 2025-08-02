@@ -1,7 +1,7 @@
 FROM php:8.2-apache
 
-# Copy files from /kycdeals in your repo to the web root
-COPY kycdeals/ /var/www/html/
+# Copy everything from the root of the repo into Apache's web root
+COPY . /var/www/html/
 
-# Enable Apache Rewrite if needed (for .htaccess)
+# Enable Apache's rewrite module (optional but common)
 RUN a2enmod rewrite
