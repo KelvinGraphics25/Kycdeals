@@ -1,14 +1,7 @@
-# Use official PHP Apache image
 FROM php:8.2-apache
 
-# Copy all your app files to the container
-COPY . /var/www/html/
+# Copy files from /kycdeals in your repo to the web root
+COPY kycdeals/ /var/www/html/
 
-# Enable Apache rewrite module
+# Enable Apache Rewrite if needed (for .htaccess)
 RUN a2enmod rewrite
-
-# Set correct permissions (optional)
-RUN chown -R www-data:www-data /var/www/html
-
-# Expose port 80
-EXPOSE 80
