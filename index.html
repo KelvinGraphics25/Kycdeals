@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="manifest" href="manifest.json">
+ <link rel="manifest" href="manifest.json">
   <meta charset="UTF-8">
   <title>KYC Deals</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -252,7 +252,7 @@ nav img {
 <!-- Navbar -->
 <nav>
   <img src="Verified.png" alt="KYC Deals Logo">
-  <a href="https://chat.whatsapp.com/FBWyQ7zZnxr2oZpY2U0fn4?mode=r_t" class="glow-btn">Get Started</a>
+  <a href="https://chat.whatsapp.com/LYDCjtMjVHECjN9zq6tbiP?mode=ac_t" class="glow-btn">Get Started</a>
 </nav>
 
 <!-- Hero Section -->
@@ -262,7 +262,9 @@ nav img {
   <h1>Welcome to KYC Deals</h1>
   <p>We offer seamless and reliable KYC services for various platforms. Fast, secure, and trusted.</p>
 
-    <a href="https://chat.whatsapp.com/FBWyQ7zZnxr2oZpY2U0fn4?mode=r_t" class="glow-btn-other">Join Our Group</a>
+    <a href="https://chat.whatsapp.com/LYDCjtMjVHECjN9zq6tbiP?mode=ac_t" class="glow-btn-other">Join Our Group</a>
+    <a href="signup.php" class="glow-btn-other">User Signup</a>
+    <a href="admin_login.php" class="glow-btn-other">Admin Login</a>
   </div>
 </section>
 
@@ -289,12 +291,12 @@ nav img {
        <div class="card">
       <h3>Bet365 deals</h3>
       <p>With this, Get verified and sell the account to us. Join our group and contact one of the admins for directions till payment.</p>
-      <a href="https://chat.whatsapp.com/FBWyQ7zZnxr2oZpY2U0fn4?mode=r_t" class="glow-btn-other">Do Now</a>
+      <a href="https://chat.whatsapp.com/LYDCjtMjVHECjN9zq6tbiP?mode=ac_t" class="glow-btn-other">Do Now</a>
     </div>
         <div class="card">
       <h3>Linkedin Account hire</h3>
       <p>We hire linkedin accounts that are 6+ months old  and have 200+ connections. Reach out to get started.</p>
-      <a href="https://chat.whatsapp.com/FBWyQ7zZnxr2oZpY2U0fn4?mode=r_t" class="glow-btn-other">Do Now</a>
+      <a href="https://chat.whatsapp.com/LYDCjtMjVHECjN9zq6tbiP?mode=ac_t" class="glow-btn-other">Do Now</a>
     </div>
   </div>
 </section>
@@ -329,14 +331,6 @@ nav img {
     <a href="https://wa.me/254799800366"><i class="bi bi-whatsapp"></i> Admin Two</a>
   </div>
 </footer>
-  
-<script>
-  if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('./sw.js')
-      .then(reg => console.log('Service Worker registered:', reg))
-      .catch(err => console.error('SW registration failed:', err));
-  }
-</script>
 
 <!-- Scripts -->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -369,7 +363,8 @@ const bgImages = [
   const testimonials = [
     { text: '"Fast service and real. Nishauza mec coin."', author: '- James K.' },
     { text: '"Very supportive, Endelea kusema ni scam!"', author: '- Pixie W.' },
-    { text: '"Comrades😂. Kujeni huku teketeke"', author: '- Brian O.' }
+    { text: '"Comrades😂. Kujeni huku teketeke"', author: '- Brian O.' },
+    { text: '"Tangu nianze kuvanya izi vitu sijainamia supper"', author: '- Fabian O.' }
   ];
   let current = 0;
 
@@ -386,6 +381,14 @@ const bgImages = [
   function prevTestimonial() {
     current = (current - 1 + testimonials.length) % testimonials.length;
     showTestimonial();
+  }
+</script>
+
+<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('./sw.js')
+      .then(reg => console.log('Service Worker registered:', reg))
+      .catch(err => console.error('SW registration failed:', err));
   }
 </script>
 </body>
